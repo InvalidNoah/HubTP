@@ -1,5 +1,10 @@
 ### HubTP
+[!logo](
 a Hub Teleport Plugin made out of my head for PocketMine API 4
+
+### CMDPerms
+you can change that in the common files **command.yml** and **perms.yml** see the [Configs](https://poggit.pmmp.io/p/HubTP/1#rdesc-section-configs) Tab :D
+
 
 ### Configs
 *world.yml*
