@@ -1,0 +1,10 @@
+# Config for the HubTP World!
+
+HubTP:
+  World: world # set the worldy ou want!
+  Type: "world"
+  msg:
+    title: "yes" # to showup a title if 'no' no title only a chat message
+    Prefix: '&c&lHub&f&lTP&r &8» &7' # Prefix
+    Teleported: '&7You have been Teleported!' # the Message at Teleport
+
