@@ -1,0 +1,4 @@
+Command:
+  Desc: Teleports you to the Mainhub from the Server! # description while type /hub
+  Name: hub # command name
+  Alias: lobby # alias of command
