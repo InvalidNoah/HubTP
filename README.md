@@ -1,5 +1,6 @@
 ### HubTP
-[!logo](
+[![logo](https://github.com/InvalidNoah/HubTP/blob/main/assets/logos/HubTP.gif?raw=false)
+
 a Hub Teleport Plugin made out of my head for PocketMine API 4
 
 ### CMDPerms
