@@ -1,5 +1,6 @@
 ### HubTP
-[![logo](https://github.com/InvalidNoah/HubTP/blob/main/assets/logos/HubTP.gif?raw=false)
+
+![HubTP.gif!](https://github.com/InvalidNoah/HubTP/blob/main/assets/logos/HubTP.gif?raw=false "HubTP Gif Logo")
 
 a Hub Teleport Plugin made out of my head for PocketMine API 4
 
@@ -58,5 +59,6 @@ Permission:
 I'm new to programming and I hope my plugins will do the job ^^
 
 ### Contact me
+<hr>
 You can contact me via Discord **EyNoah#0683**
 or visit my [Website](https://eynoah.de)
