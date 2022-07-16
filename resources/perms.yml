@@ -1,0 +1,4 @@
+Permission:
+  MSG: '{prefix}&cYou dont have the correct permission!' # if player has no permission to use /hub
+  Perms: hubtp.use # the Permission
+  Desc: Allows the player to use /hub # Permission description
