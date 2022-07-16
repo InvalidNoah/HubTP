@@ -1,0 +1,11 @@
+# Config for /hub in a server
+
+HubTP:
+  Type: "transfer" # 2 different types are available ['waterdog'|'transfer']
+  transfer:
+    ip: "geo.hivebedrock.network"
+    port: 19132
+    reason: 'Transfered by doing /hub'
+  waterdog:
+    servername: "lobby"
+    message: "You where transfered to {servername} from HubTP :D"
