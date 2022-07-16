@@ -49,6 +49,13 @@ class HubTPCommand extends Command {
                         $this->transferPlayerToHub($sender, $server->getNested("HubTP.waterdog.servername"));
                     }
                 }
+            } else {
+                $prefix = $wcfg->getNested("HubTP.msg.Prefix");
+                $prefixColor = str_replace(["&"], ["§"], $prefix);
+                $permMsg = $perm->getNested("Permission.MSG");
+                $tpMsg = str_replace(["&", "{prefix}", "{servername}"], ["§", $prefixColor, $permMsg], $perm->getNested("Permission.MSG"));
+
+                $sender->sendMessage($tpMsg);
             }
 
         }
