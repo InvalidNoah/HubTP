@@ -1,0 +1,9 @@
+name: HubTP
+version: 1.0
+api: 4.0.0
+main: SpeedCode\Youtube\HubTP
+
+
+permissions:
+  hubtp.use:
+    default: op
