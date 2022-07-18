@@ -19,7 +19,7 @@ class HubTP extends PluginBase implements Listener {
     public function onEnable(): void {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         @mkdir($this->getDataFolder());
-        //$this->getServer()->getPluginManager()->addPermission(new Permission($hub->getNested("Permission.Perms"), $hub->getNested("Permission.Desc"), Permission::DEFAULT_OP));
+      
 
         $this->getServer()->getLogger()->info("HubTP geladen!");
 
@@ -43,26 +43,6 @@ class HubTP extends PluginBase implements Listener {
         } elseif($wcfg->getNested("HubTP.msg.title") === "no"){
             $this->getLogger()->warning("The Hubtitle is set to §c§lNo§r....");
         }
-        #$this->getLogger()->warning("The Hubtitle is set to " . $wcfg->getNested("HubTP.msg.title"));
-
-        /*$wcfg = new Config($this->getDataFolder() . "world.yml", 2);
-        if($wcfg->exists("HubTP.World")){
-            $this->getLogger()->warning("The World is " . $wcfg->getNested("HubTP.World"));
-        } else {
-            $wcfg->setNested("HubTP.World", "world");
-        }
-
-        if($wcfg->exists("HubTP.msg.title")){
-            $this->getLogger()->warning("The Title is " . $wcfg->getNested("HubTP.msg.title"));
-        } else {
-            $this->getLogger()->info("the HubTITLE was set to " . $wcfg->getNested("HubTP.msg.title"));
-            $wcfg->setNested("HubTP.msg.title", "no");
-        }
-
-        $wcfg->setNested("HubTP.msg.title", "yes");
-        $wcfg->setNested("HubTP.msg.Prefix", "&c&lHub&f&lTP&r &8» &7");
-        $wcfg->setNested("HubTP.msg.Teleported", "&7You have been Teleported!");
-        $wcfg->save();*/
         $this->getServer()->getCommandMap()->registerAll("hubtp", [
             new HubTPCommand($this)
         ]);
