@@ -56,6 +56,7 @@ Permission:
 ```
 
 ### about my Skills
+<hr>
 I'm new to programming and I hope my plugins will do the job ^^
 
 ### Contact me
