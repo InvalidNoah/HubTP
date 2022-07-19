@@ -60,5 +60,5 @@ I'm new to programming and I hope my plugins will do the job ^^
 
 ### Contact me
 <hr>
-You can contact me via Discord **EyNoah#0683**
-or visit my [Website](https://eynoah.de)
+You can contact me via Discord <b><a href="https://discordapp.com/users/586231322993754119" target="_blank" title="html link">EyNoah#0683</a></b>
+or visit my <a href="https://eynoah.de/" target="_blank">Website</a>
