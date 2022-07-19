@@ -21,6 +21,8 @@ class HubTPCommand extends Command {
         $this->plugin = $plugin;
         $cmd = new Config($this->plugin->getDataFolder() . "command.yml", 2);
         parent::__construct($cmd->getNested("Command.Name"), $cmd->getNested("Command.Desc"));
+        $this->setAliases([$cmd->getNested("Command.Alias")]);
+        $this->setLabel($cmd->getNested("Command.Desc"));
     }
 
     public function execute(CommandSender $sender, string $commandLabel, array $args)
@@ -44,7 +46,8 @@ class HubTPCommand extends Command {
                     }
                 } elseif($wcfg->getNested("HubTP.Type") === "server"){
                     if($server->getNested("HubTP.Type") === "transfer"){
-                        $sender->transfer($server->getNested("HubTP.transfer.ip"), $server->getNested("HubTP.transfer.port"), $server->getNested("HubTP.transfer.reason"));
+                        $tplayer = str_replace(["{p}"], [$sender->getName()], $server->getNested("HubTP.transfer.reason"));
+                        $sender->transfer($server->getNested("HubTP.transfer.ip"), $server->getNested("HubTP.transfer.port"), $tplayer);
                     } elseif($server->getNested("HubTP.Type") === "waterdog"){
                         $this->transferPlayerToHub($sender, $server->getNested("HubTP.waterdog.servername"));
                     }
