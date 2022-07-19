@@ -5,5 +5,5 @@ branches:
 projects:
   HubTP:
     path: ""
-    icon: "assets/logos/teleportation.png"
+    icon: "teleportation.png"
 ...
