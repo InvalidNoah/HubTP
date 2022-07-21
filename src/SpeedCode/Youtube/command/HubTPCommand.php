@@ -9,7 +9,6 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\PluginIdentifiableCommand;
 use pocketmine\network\mcpe\protocol\TransferPacket;
 use pocketmine\player\Player;
-use pocketmine\plugin\Plugin;
 use pocketmine\utils\Config;
 use SpeedCode\Youtube\HubTP;
 
@@ -77,8 +76,4 @@ class HubTPCommand extends Command {
         $player->sendMessage($tpMsg);
     }
 
-    public function getPlugin(): Plugin
-    {
-        return $this->plugin;
-    }
 }
