@@ -32,7 +32,7 @@ class HubTPCommand extends Command {
         if($sender instanceof Player){
             if($sender->hasPermission($perm->getNested("Permission.Perms"))) {
                 $world = $wcfg->getNested("HubTP.World");
-                $tpWorld = $this->getPlugin()->getServer()->getWorldManager()->getWorldByName($world);
+                $tpWorld = $this->plugin->getServer()->getWorldManager()->getWorldByName($world);
                 $tpMsg = $wcfg->getNested("HubTP.msg.Teleported");
                 $teleported = str_replace(["{prefix}", "&"], [$wcfg->getNested("HubTP.msg.Prefix", "§")], $tpMsg);
                 if($wcfg->getNested("HubTP.Type") === "world"){
